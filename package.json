@@ -1,0 +1,13 @@
+{
+  "name": "gillog",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Daniel Giljam",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "highlight-cli": "^1.0.0",
+    "loglevel": "^1.6.3",
+    "loglevel-plugin-prefix": "^0.8.4",
+    "ora": "^3.4.0"
+  }
+}
