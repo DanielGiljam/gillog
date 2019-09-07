@@ -119,12 +119,12 @@ module.exports = {
         }
     },
     trafficLogger,
-    withLogging: (Component => withLogging(
+    withLogging: Component => withLogging(
         Component,
         name => getIsomorphicLogger(
             name,
             getServerSideLogger,
             getClientSideLogger
         )
-    ))(),
+    )
 }
