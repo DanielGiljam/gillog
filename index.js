@@ -72,7 +72,7 @@ function getClientSideLogger(name) {
     else return logger
 }
 
-function getIsomorphicLogger(name, getClientSideLogger, getServerSideLogger) {
+function getIsomorphicLogger(name, getServerSideLogger, getClientSideLogger) {
 
     // Determining environment
     const isServerSide = new Function("try {return this===global}catch(e){return false}")()
@@ -113,9 +113,9 @@ module.exports = {
         return clientSide
     })(),
     isomorphic: {
-        ...getIsomorphicLogger(),
+        ...getIsomorphicLogger(null, getServerSideLogger, getClientSideLogger),
         getLogger(name) {
-            return getIsomorphicLogger(name)
+            return getIsomorphicLogger(name, getServerSideLogger, getClientSideLogger)
         }
     },
     trafficLogger,
