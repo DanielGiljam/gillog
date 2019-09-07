@@ -1,13 +1,19 @@
 {
   "name": "gillog",
-  "version": "0.0.0",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "A Node.js/JavaScript logging library",
+  "homepage": "https://github.com/DanielGiljam/gillog#readme",
+  "bugs": "https://github.com/DanielGiljam/gillog/issues",
+  "license": "GPL-3.0",
+  "private": true,
   "author": "Daniel Giljam",
+  "main": "index.js",
   "dependencies": {
     "chalk": "^2.4.2",
     "highlight-cli": "^1.0.0",
     "loglevel": "^1.6.3",
     "loglevel-plugin-prefix": "^0.8.4",
     "ora": "^3.4.0"
-  }
+  },
+  "repository": "github:DanielGiljam/npc"
 }
